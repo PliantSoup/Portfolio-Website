@@ -28,33 +28,37 @@ class HomePage extends StatelessWidget {
                 offset: const Offset(0, 0),
                 delay: const Duration(seconds: 1),
                 duration: const Duration(milliseconds: 800),
-                child: ColorFiltered(
-                  colorFilter: ColorFilter.matrix(<double>[
-                    0.2126,
-                    0.7152,
-                    0.0722,
-                    0,
-                    0,
-                    0.2126,
-                    0.7152,
-                    0.0722,
-                    0,
-                    0,
-                    0.2126,
-                    0.7152,
-                    0.0722,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                  ]),
-                  child: Image.asset(
-                    "images/man.png",
-                    height: width < 1200 ? height * 0.8 : height * 0.85,
-                  ),
+                // child: ColorFiltered(
+                //   colorFilter: ColorFilter.matrix(<double>[
+                //     0.2126,
+                //     0.7152,
+                //     0.0722,
+                //     0,
+                //     0,
+                //     0.2126,
+                //     0.7152,
+                //     0.0722,
+                //     0,
+                //     0,
+                //     0.2126,
+                //     0.7152,
+                //     0.0722,
+                //     0,
+                //     0,
+                //     0,
+                //     0,
+                //     0,
+                //     1,
+                //     0,
+                //   ]),
+                //   child: Image.asset(
+                //     "images/man.png",
+                //     height: width < 1200 ? height * 0.8 : height * 0.85,
+                //   ),
+                // ),
+                child: Image.asset(
+                  "images/man.png",
+                  height: width < 1200 ? height * 0.8 : height * 0.85,
                 ),
               ),
             ),
@@ -92,26 +96,38 @@ class HomePage extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Container(
-                      child: const Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        color: soupy_colors.secondaryColor,
-                      ),
+                    const Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      color: soupy_colors.secondaryColor,
                     ),
                     SizedBox(
-                      width: 150.0,
+                      width: 300.0,
                       child: DefaultTextStyle(
                         style: GoogleFonts.montserrat(
                           fontSize: height * 0.03,
                           fontWeight: FontWeight.w300,
                           color: soupy_colors.fontColor,
                         ),
-                        child: AnimatedTextKit(
-                          repeatForever: true,
-                          animatedTexts: [
-                            TyperAnimatedText('Flutter'),
-                            TyperAnimatedText('Android'),
-                            TyperAnimatedText('Unity'),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            AnimatedTextKit(
+                              repeatForever: true,
+                              animatedTexts: [
+                                TyperAnimatedText('Flutter'),
+                                TyperAnimatedText('Android'),
+                                TyperAnimatedText('Game'),
+                              ],
+                            ),
+                            Text(
+                              "Developer",
+                              style: GoogleFonts.montserrat(
+                                fontSize: height * 0.03,
+                                fontWeight: FontWeight.w300,
+                                color: soupy_colors.fontColor,
+                              ),
+                            ),
                           ],
                         ),
                       ),

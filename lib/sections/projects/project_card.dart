@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/utils/custom_colors.dart' as soupy_colors;
-import 'package:url_launcher/url_launcher.dart';
+
+import '../../utils/url_launcher.dart';
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({Key? key, required this.link}) : super(key: key);
 
   final String link;
-
-  void _launchURL(String _url) async {
-    if (!await launch(_url)) throw 'Could not launch $_url';
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +28,7 @@ class ProjectCard extends StatelessWidget {
         ),
       ),
       onTap: () {
-        _launchURL(link);
+        launchURL(link);
       },
     );
   }

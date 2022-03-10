@@ -3,9 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/utils/custom_colors.dart' as soupy_colors;
 
 class InfoCard extends StatelessWidget {
-  const InfoCard(
-      {Key? key, required this.icon, required this.header, required this.info})
-      : super(key: key);
+  const InfoCard({
+    Key? key,
+    required this.icon,
+    required this.header,
+    required this.info,
+  }) : super(key: key);
 
   final IconData icon;
   final String header;

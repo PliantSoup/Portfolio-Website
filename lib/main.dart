@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_website/sections/about.dart';
+import 'package:portfolio_website/sections/about/about.dart';
 import 'package:portfolio_website/sections/contacts/contacts.dart';
 import 'package:portfolio_website/sections/home/home.dart';
-import 'package:portfolio_website/sections/projects.dart';
+import 'package:portfolio_website/sections/projects/projects.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'utils/custom_colors.dart' as soupy_colors;

@@ -7,7 +7,8 @@ import 'package:flutter/material.dart';
 const int _mainColor = 0xFF000000;
 const int _secondaryColor = 0xFFFFD700;
 const int _fontColor = 0xFFE6D5B8;
-const int _selectedColor = 0xFFE45826;
+// const int _selectedColor = 0xFFE45826;
+const int _selectedColor = 0xFF344CB7;
 
 // Night
 // const int _mainColor = 0xFF21325E;
