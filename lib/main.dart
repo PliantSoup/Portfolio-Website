@@ -44,7 +44,7 @@ class MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Image.asset("logo.png", fit: BoxFit.contain, height: 64),
+        title: Image.asset("images/logo.png", fit: BoxFit.contain, height: 64),
         elevation: 0,
         actions: [
           NavBar(),

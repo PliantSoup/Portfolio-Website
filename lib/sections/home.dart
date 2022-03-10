@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                 delay: const Duration(seconds: 1),
                 duration: const Duration(milliseconds: 800),
                 child: Image.asset(
-                  "man.png",
+                  "images/man.png",
                   height: width < 1200 ? height * 0.8 : height * 0.85,
                 ),
               ),
