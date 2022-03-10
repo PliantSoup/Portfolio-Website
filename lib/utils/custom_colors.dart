@@ -3,7 +3,8 @@ library colors;
 import 'package:flutter/material.dart';
 
 // Coffee-gold
-const int _mainColor = 0xFF4A3933;
+// const int _mainColor = 0xFF4A3933;
+const int _mainColor = 0xFF000000;
 const int _secondaryColor = 0xFFFFD700;
 const int _fontColor = 0xFFE6D5B8;
 const int _selectedColor = 0xFFE45826;

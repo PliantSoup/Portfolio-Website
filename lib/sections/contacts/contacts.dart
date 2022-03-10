@@ -11,12 +11,9 @@ class ContactsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-    return Container(
+    return SizedBox(
       height: height - 50,
       width: width,
-      decoration: const BoxDecoration(
-        color: soupy_colors.mainColor,
-      ),
       child: Stack(
         children: [
           Row(

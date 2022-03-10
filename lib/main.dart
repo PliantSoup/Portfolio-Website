@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/sections/about.dart';
 import 'package:portfolio_website/sections/contacts/contacts.dart';
-import 'package:portfolio_website/sections/home.dart';
+import 'package:portfolio_website/sections/home/home.dart';
 import 'package:portfolio_website/sections/projects.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         primarySwatch: soupy_colors.mainColor,
+        scaffoldBackgroundColor: soupy_colors.mainColor,
       ),
       home: const MainPage(title: "PliantSoup's Portfolio"),
     );
